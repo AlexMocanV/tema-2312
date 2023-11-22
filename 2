@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    for(i=2;i*i<n;i++)
+    {
+        if(n%i==0)
+        {
+            s+=i;
+            s+=n/i;
+        }
+    }
+
+    if(i*i==n)
+    {
+        s+=i;
+    }
+    if(s==n)
+    {
+        cout<<n<<" este un numar perfect";
+    }
+    else
+    {
+        cout<<n<<" nu este un numar perfect";
+    }
+    return 0;
+}
